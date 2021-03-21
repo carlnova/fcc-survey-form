@@ -29,7 +29,7 @@ body {
 body {
   /* background-image: url(images/guitarShop.jpg); */
   /* background-image: url("https://dl.dropboxusercontent.com/s/gchwv9xqw7l5o0f/pexels-andrea-piacquadio-3811824.jpg?dl=0"); */
-  background-image: url(images/pexels-andrea-piacquadio-3811824.jpg);
+  background-image: url("images/pexels-andrea-piacquadio-3811824.jpg");
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
