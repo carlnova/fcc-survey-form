@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="surveyForm.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Guitar Repair Order</h1>
+      <p id="description">
+        <em
+          >Please provide us with a detailed description of your repair
+          needs</em
+        >
+      </p>
+    </header>
+
+    <div id="container">
+      <main class="options">
+        <form id="survey-form">
+          <div class="form-wrapper">
+            <label id="name-label" class="form-style" for="name">Name:</label
+            ><br />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              size="30"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-wrapper">
+            <label id="email-label" class="form-style" for="email">Email:</label
+            ><br />
+            <input
+              id="email"
+              type="email"
+              id="email"
+              size="30"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-wrapper">
+            <label id="number-label" class="form-style" for="age"
+              ># of Guitars:</label
+            ><br />
+            <input
+              id="number"
+              type="number"
+              name="age"
+              placeholder="# of Guitars"
+              size="30"
+              min="1"
+              max="4"
+            />
+          </div>
+          <div class="current-role">
+            <label for="favoriteFeature"
+              >Please select your guitar type from the options below</label
+            >
+            <select name="options" id="dropdown">
+              <option>Electric Guitar</option>
+              <option></option>
+              <option>Acoustic Guitar</option>
+              <option>Bass Guitar</option>
+            </select>
+          </div>
+          <p>Please describe how fast do you need your guitar serviced for:</p>
+          <div>
+            <input type="radio" id="a" name="how-fast" value="a" />
+            <label for="a">No hurry (5-7 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="b" name="how-fast" value="b" />
+            <label for="b">Somewhat fast (2-4 business days)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="c" name="how-fast" value="c" />
+            <label for="c">ASAP (Today or Tomorrow at the latest)</label>
+          </div>
+
+          <p>
+            What kind of service(s) would you like us to perform? (Check all
+            that apply)
+          </p>
+          <div>
+            <input type="checkbox" id="a" name="a" value="a" />
+            <label for="a">Cleaning and Care</label>
+          </div>
+          <div>
+            <input type="checkbox" id="b" name="b" value="b" />
+            <label for="b">Installing Strings</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Neck Evaluation</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Setup and Action</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Intonation and Compensation</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Tuning Machines</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Electric/Bass Guitar Bridges</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Acoustic Guitar Bridges</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c" name="c" value="c" />
+            <label for="c">Acoustic Guitar Repair</label>
+          </div>
+          <br />
+          <div>
+            <label for="comment"
+              >Please describe any service details below:</label
+            >
+          </div>
+          <textarea id="comment" name="comment" rows="10" cols="40">
+Enter your request here...</textarea
+          >
+          <br /><br />
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
